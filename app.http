@@ -1,0 +1,35 @@
+### 
+
+get http://localhost:3000/users/
+
+
+### api1 user creating..
+post http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "username": "robin002",
+    "name": "robin",
+    "password": "robin@111",
+    "gender": "male",
+    "location": "India"
+}
+
+### api2 user login..
+post http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "robin001",
+    "password": "robin@111"
+}
+
+### api3 update password
+put http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+    "username": "robin002",
+    "oldPassword": "robin@222",
+    "newPassword": "robin@111"
+}
